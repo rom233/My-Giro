@@ -1,0 +1,153 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f3f3f2;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1050px;
+}
+
+header .container .menu a, .items .item button {
+  color: #fff;
+  background: #c2857a;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+header {
+  background: #fff;
+  padding: 10px 0;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container .menu a {
+  margin-left: 10px;
+}
+
+header .container .menu a:hover {
+  opacity: 0.8;
+}
+
+.about {
+  background: #fff;
+  margin: 30px 0;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.about .title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.items .item {
+  background: #fff;
+  border-radius: 5px;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 240px;
+  width: 180px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.items .item .header {
+  text-align: center;
+}
+
+.items .item .header img {
+  max-height: 110px;
+}
+
+.items .item .header p {
+  margin-bottom: 10px;
+}
+
+.items .item .header .title {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.items .item .header .price {
+  font-size: 16px;
+}
+
+.items .item .header .price::before {
+  content: 'Цена: ';
+  color: #969696;
+}
+
+.items .item button:hover {
+  opacity: 0.8;
+}
+
+footer {
+  margin-top: auto;
+  background: #fff;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=main.css.map */

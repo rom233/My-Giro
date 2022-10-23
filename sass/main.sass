@@ -1,0 +1,106 @@
+*
+    margin: 0
+    padding: 0
+
+body
+    background: rgb(243, 243, 242)
+    font-family: 'Montserrat', sans-serif
+
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+
+button
+    font-family: 'Montserrat', sans-serif
+
+.container
+    margin: 0 auto
+    width: 1050px
+
+%button_1
+    color: #fff
+    background: #c2857a
+    padding: 10px 15px
+    border-radius: 5px
+    text-decoration: none
+    border: none
+    cursor: pointer
+    outline: none
+
+header
+    background: #fff
+    padding: 10px 0
+
+    .container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        
+        .menu
+            display: flex
+        
+            a
+                margin-left: 10px
+                @extend %button_1
+
+                &:hover
+                    opacity: 0.8
+
+.about
+    background: #fff
+    margin: 30px 0
+    border-radius: 5px
+    padding: 15px
+
+    .title
+        font-size: 25px
+        margin-bottom: 10px
+
+
+.items
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 25px
+
+    .item
+        background: #fff
+        border-radius: 5px
+        padding: 15px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        height: 240px
+        width: 180px
+
+        margin-top: 20px
+        margin-right: 20px
+
+        .header
+            text-align: center
+
+            img
+                max-height: 110px
+            p
+                margin-bottom: 10px
+            .title
+                font-size: 20px
+                margin-top: 15px
+
+            .price
+                font-size: 16px
+                &::before
+                    content: 'Цена: '
+                    color: #969696
+
+        button
+            @extend %button_1
+
+            &:hover
+                opacity: 0.8
+
+footer
+    margin-top: auto
+    background: #fff
+    height: 50px
+    display: flex
+    align-items: center
